@@ -1,18 +1,17 @@
 import org.jfugue.player.Player;
 
 public class Music {
-    public static void playNote(Player player1, Player player2, String note, String speed) {
-        String comboNote = "I56 " + note + speed;
+    public static void playNote(Player player1, String note, String speed, String instrument) {
+        String comboNote = instrument + note + speed;
         System.out.println(comboNote);
         player1.play(comboNote);
         //pauseForNoteDuration(speed, false);
-        playDupe(player2, note, speed);
-        //pauseForNoteDuration(speed, true);
-    }
-
-    public static void playDupe(Player player2, String note, String speed) {
-        String comboNote = "I40 " + note + speed;
-        player2.play(comboNote);
+        if (instrument == "I40 ")
+            return;
+            else {
+                instrument = "I40 ";
+            }
+        playNote(player1, note, speed, instrument);
     }
 
     public static String setupChord(int rndNote) {
