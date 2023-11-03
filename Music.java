@@ -45,7 +45,7 @@ public class Music {
             case 1:
                 return "ha64";
             case 2:
-                return "qa32";
+                return "qa1d1";
             default:
                 return "wa127d127";
         }
