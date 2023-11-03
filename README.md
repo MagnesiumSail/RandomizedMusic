@@ -4,9 +4,7 @@ This program played randomized notes using a diatonic scale to make "music"
 
 I made this to learn Java syntax, as well as make my first program that interacts with music.
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/fMia2T1fPE0)
 
 # Development Environment
 
