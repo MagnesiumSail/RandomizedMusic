@@ -2,19 +2,24 @@ import org.jfugue.player.Player;
 
 public class Music {
     public static void playNote(Player player1, String note, String speed, String instrument) {
+        //make note from all randomization
         String comboNote = instrument + note + speed;
         System.out.println(comboNote);
+        //play full note
         player1.play(comboNote);
         //pauseForNoteDuration(speed, false);
-        if (instrument == "I40 ")
+        if (instrument == "I40 ") //base case
             return;
             else {
+                //2nd loop setup
                 instrument = "I40 ";
             }
+        //recusion through again
         playNote(player1, note, speed, instrument);
     }
 
     public static String setupChord(int rndNote) {
+        //set random int to chord
         switch (rndNote) {
             case 1:
                 return "Cmaj";
@@ -39,6 +44,7 @@ public class Music {
 
     public static String setupSpeed(int rndSpeed) {
         switch (rndSpeed) {
+            //set random int to note speed
             case 0:
                 return "wa127";   
             case 1:
